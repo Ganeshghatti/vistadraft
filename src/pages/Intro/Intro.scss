@@ -1,0 +1,15 @@
+section{
+    height: 100vh;
+}
+h2{
+    font-size: 36px !important;
+    font-weight: 700 !important;
+}
+.main-points-1-div,.main-points-2-div,.main-points-3-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .dotted-star{
+        width: 40px;
+    }
+}
