@@ -4,11 +4,66 @@
   display: flex;
   flex-direction: $direction;
 }
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(36px, 12vw, 66px);
+  font-weight: 700;
+  z-index: 0 !important;
+}
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(22px, 6vw, 36px);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
 h3 {
-  font-family: "Inter", sans-serif !important;
-  font-size: clamp(18px, 4vw, 28px) !important;
-  font-weight: 700 !important;
-  text-align: center !important;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(18px, 4vw, 28px);
+  font-weight: 500;
+}
+header {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+}
+.header-content {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  gap: 20vh;
+  padding: 0 0 12vh 8vw;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 770px) {
+    padding: 0 0 15vh 0;
+    align-items: center;
+  }
+  h1 {
+    z-index: 1 !important;
+  }
+  h2 {
+    @media (max-width: 770px) {
+      align-items: center;
+    }
+  }
+}
+.wavevideo {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  object-fit: cover;
+  top: 0;
+  z-index: -1;
 }
 #home {
   @include flex(column);
@@ -16,20 +71,132 @@ h3 {
 }
 
 #clients {
-  padding: 60px 50px 0;
-  width: 100vw;
-  @include flex(row);
-  justify-content: center;
-  align-items: center;
-  gap: 10vw;
-  flex-wrap: nowrap;
-}
-#Intro {
+  width: 80vw;
+  height: 100vh;
+  overflow: hidden;
   @include flex(column);
-  justify-content: center;
   align-items: center;
-  width: 70vw;
-  padding:60px 0 0 0;
+  justify-content: space-between;
+  h3 {
+    text-align: center;
+    margin-top: 20vh;
+  }
+  .client-logos {
+    @include flex(row);
+    gap: 0 5vw;
+    @media (max-width: 770px) {
+      flex-direction: column;
+    }
+    padding: 5vh 0;
+    div {
+      @include flex(row);
+      gap: 5vw;
+    }
+  }
+  .starvideo {
+    width: 65%;
+    @media (max-width: 770px) {
+      width: 80vw;
+    }
+  }
+}
+#services {
+  width: 80vw;
+  height: 100vh;
+  @include flex(row);
+  align-items: center;
+  justify-content: center;
+  .scroll-container {
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    .main-points {
+      @include flex(row);
+      width: 80vw;
+      align-items: center;
+      justify-content: space-between;
+      .main-points-div {
+        display: flex;
+        flex-direction: row;
+
+        .dotted-star {
+          width: 80px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+.star-img {
+  position: absolute;
+  width: 50px;
+  left: 70vw;
+  top: 60vh;
+}
+.section1,
+.section2,
+.section3,
+.section4 {
+  height: 100vh;
+  width: 100vw;
+}
+.theme-background-animation {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+.theme-background {
+  background: rgb(234, 109, 10);
+  background: -moz-linear-gradient(
+    145deg,
+    rgba(234, 109, 10, 1) 0%,
+    rgba(241, 196, 45, 1) 33%,
+    rgba(241, 159, 36, 1) 80%,
+    rgba(232, 174, 24, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    rgba(234, 109, 10, 1) 0%,
+    rgba(241, 196, 45, 1) 33%,
+    rgba(241, 159, 36, 1) 80%,
+    rgba(232, 174, 24, 1) 100%
+  );
+  background: linear-gradient(
+    145deg,
+    rgba(234, 109, 10, 1) 0%,
+    rgba(241, 196, 45, 1) 33%,
+    rgba(241, 159, 36, 1) 80%,
+    rgba(232, 174, 24, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea6d0a",endColorstr="#e8ae18",GradientType=1);
+}
+.theme-background-secondary {
+  background: rgb(241, 159, 36);
+  background: -moz-linear-gradient(
+    145deg,
+    rgba(241, 159, 36, 1) 9%,
+    rgba(241, 196, 45, 1) 39%,
+    rgba(234, 109, 10, 1) 76%,
+    rgba(232, 174, 24, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    145deg,
+    rgba(241, 159, 36, 1) 9%,
+    rgba(241, 196, 45, 1) 39%,
+    rgba(234, 109, 10, 1) 76%,
+    rgba(232, 174, 24, 1) 100%
+  );
+  background: linear-gradient(
+    145deg,
+    rgba(241, 159, 36, 1) 9%,
+    rgba(241, 196, 45, 1) 39%,
+    rgba(234, 109, 10, 1) 76%,
+    rgba(232, 174, 24, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f19f24",endColorstr="#e8ae18",GradientType=1);
 }
 .five-pointed-star {
   --star-color: #f88406;

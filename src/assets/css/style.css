@@ -21,6 +21,16 @@
 .contact-btn:hover::before {
   width: 160%;
 }
+/* CSS */
+.fullscreen-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute; 
+  top: 0;
+  z-index: 2 !important;
+  left: 0;
+}
 
 /* Slider Background */
 .theme-background {
@@ -75,7 +85,7 @@
 }
 
 /* Animation delays  */
-.animation-delay-4000 {
+/* .animation-delay-4000 {
   animation-delay: 4000ms;
 }
 .animation-delay-5000 {
@@ -86,10 +96,10 @@
 }
 .animation-delay-7000 {
   animation-delay: 7000ms;
-}
+} */
 
 /* Main Heading Animation */
-.main-heading-word {
+/* .main-heading-word {
   @apply animate-textUp block animation-delay-6000 translate-y-14;
 }
 .main-heading-word.word-1 {
@@ -109,7 +119,7 @@
 }
 .main-heading-word.word-6 {
   animation-delay: 7000ms;
-}
+} */
 
 /* Preloader */
 .spin-letter {
