@@ -27,6 +27,7 @@ body {
 h1 {
   font-family: satoshi;
   font-weight: 900;
+  font-size: 30px;
   color: black;
 }
 
@@ -51,7 +52,7 @@ h6 {
   font-weight: 700;
   font-family: satoshimedium;
   letter-spacing: 0.25px;
-  font-size: clamp(12px, 2vw, 18px);
+  font-size: clamp(10px, 1vw, 14px);
 }
 
 .domain-hr {
@@ -61,7 +62,8 @@ h6 {
 .list1,
 .list2,
 .list3,
-.main-points-3-section-list {
+.list4,
+.main-points-4-section-list {
   font-family: "Poppins", sans-serif;
   font-size: clamp(12px, 2.5vw, 20px);
   font-family: GT;
@@ -107,8 +109,11 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+.header-content h1 {
+  color: #646464;
+}
 .header-content h2 {
-  color: black;
+  color: #646464;
 }
 @media (max-width: 770px) {
   .header-content h2 {
@@ -152,6 +157,12 @@ header {
 #clients h3 {
   font-weight: 900;
   font-family: satoshi;
+  width: 75%;
+}
+@media (max-width: 770px) {
+  #clients h3 {
+    width: 80vw;
+  }
 }
 #clients .starvideo {
   width: 75%;
@@ -170,14 +181,14 @@ header {
   width: 100vw;
 }
 
-.section3 {
+.section4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
 }
 
-.main-points-3-section {
+.main-points-4-section {
   width: 80vw;
   height: 100vh;
   gap: 10vw;
@@ -186,45 +197,51 @@ header {
   align-items: flex-end;
   justify-content: space-between;
 }
-.main-points-3-section .main-points-3-section-div {
-  width: 40vw;
+.main-points-4-section .main-points-4-section-div {
+  width: 80vw;
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding: 0 0 0 7vw;
 }
-.main-points-3-section .main-points-3-section-div div h2 {
-  font-size: 3.5vw;
+.main-points-4-section .main-points-4-section-div div h2 {
+  font-size: clamp(22px, 5vw, 44px);
   color: black;
   font-weight: 900;
   font-family: "Satoshi";
 }
 @media (max-width: 770px) {
-  .main-points-3-section .main-points-3-section-div {
+  .main-points-4-section .main-points-4-section-div {
     width: 80vw;
     padding: 0;
   }
 }
-.main-points-3-section .main-points-3-section-div ul {
-  padding: 0 0 0 6vw;
+.main-points-4-section .main-points-4-section-div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-@media (max-width: 770px) {
-  .main-points-3-section .main-points-3-section-div ul {
-    padding: 0 0 0 15vw;
-  }
-}
-.main-points-3-section .main-points-3-section-div ul li {
+.main-points-4-section .main-points-4-section-div ul li {
   padding: 5px 0;
   text-align: left !important;
   font-weight: 400;
   font-family: "Satoshi";
-  font-size: 25px;
-  color: #646464;
+  font-size: clamp(18px, 3.5vw, 28px);
+  margin-left: 1.25em;
 }
-.main-points-3-section .main-points-3-section-div div {
+.main-points-4-section .main-points-4-section-div div {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.main-points-4-section .scroll-container-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0 0 5vw;
 }
 
 .theme-background-animation {
@@ -241,12 +258,19 @@ header {
   height: 50vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 #videosec-text h3 {
   font-family: satoshi;
+  width: 75%;
   font-size: clamp(16px, 3vw, 24px);
   font-weight: 900;
+}
+@media (max-width: 770px) {
+  #videosec-text h3 {
+    width: 80vw;
+  }
 }
 
 #videosec {
@@ -295,7 +319,6 @@ header {
   position: absolute;
   left: 30vw;
   top: 500vh;
-  border: 2px solid red;
 }
 
 .mobile-faq {
@@ -312,6 +335,20 @@ header {
   font-family: satoshilight;
   letter-spacing: 0.25px;
   font-size: clamp(12px, 2vw, 18px);
+}
+
+.full-screen-slider-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 770px) {
+  .full-screen-slider-container {
+    height: auto;
+    background-color: rgb(234, 109, 10);
+  }
 }
 
 .theme-background {
@@ -899,16 +936,17 @@ header {
   gap: 10vw;
 }
 #services .scroll-container .main-points .main-points-div {
-  width: 40vw;
-  padding: 0 0 0 7vw;
+  width: 80vw;
+  border: 5px solid blue;
+  padding: 0 0 0 5vw;
   display: flex;
   flex-direction: column;
 }
 #services .scroll-container .main-points .main-points-div div h2 {
-  font-size: 4.5vw;
-  color: black;
+  font-size: clamp(22px, 5vw, 44px);
+  color: #646464;
   font-weight: 900;
-  font-family: "Satoshi";
+  font-family: satoshi;
 }
 @media (max-width: 770px) {
   #services .scroll-container .main-points .main-points-div {
@@ -917,19 +955,20 @@ header {
   }
 }
 #services .scroll-container .main-points .main-points-div ul {
-  padding: 0 0 0 6vw;
-}
-@media (max-width: 770px) {
-  #services .scroll-container .main-points .main-points-div ul {
-    padding: 0 0 0 15vw;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #services .scroll-container .main-points .main-points-div ul li {
   padding: 5px 0;
   text-align: left !important;
   font-weight: 400;
   font-family: "Satoshi";
-  font-size: 25px;
+  font-size: clamp(18px, 3.5vw, 28px);
+  margin-left: 1.25em;
 }
 #services .scroll-container .main-points .main-points-div div {
   display: flex;
@@ -941,9 +980,15 @@ header {
   -o-object-fit: contain;
      object-fit: contain;
 }
+#services .scroll-container .scroll-container-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0 0 5vw;
+}
 
 .five-pointed-star-explode {
-  --star-color: #f88406;
+  --star-color: #646464;
   margin: 1em auto;
   font-size: 5em;
   position: relative;
@@ -956,7 +1001,7 @@ header {
   transform: rotate(35deg);
   position: absolute;
   left: 30vw;
-  top: 635vh;
+  top: 735vh;
 }
 
 .five-pointed-star-explode:before {
@@ -998,4 +1043,44 @@ header {
 
 .rating_stars {
   width: 30px;
+}
+
+.footer-vistacom {
+  font-family: satoshimedium;
+  color: black;
+}
+
+.footer-right {
+  font-family: satoshilight;
+}
+
+.footer-links {
+  font-family: satoshilight;
+  font-size: 14px;
+}
+
+@media (max-width: 770px) {
+  .footer-sec1 {
+    align-items: center;
+  }
+}
+
+/* FullScreenSlider.css */
+.full-screen-slider-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Adjust the background color as needed */
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide video {
+  max-width: 80%;
+  max-height: 80vh;
 }/*# sourceMappingURL=Hero.css.map */

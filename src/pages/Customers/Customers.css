@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: GT;
+  src: url(../../../public/Assets/fonts/GT-Haptik-Regular.ttf);
+}
+@font-face {
+  font-family: satoshi;
+  src: url(../../../public/Assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.ttf);
+}
+@font-face {
+  font-family: satoshilight;
+  src: url(../../../public/Assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.ttf);
+}
+@font-face {
+  font-family: satoshimedium;
+  src: url(../../../public/Assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.ttf);
+}
+@font-face {
+  font-family: campton;
+  src: url(../../../public/Assets/fonts/CamptonBlack.otf);
+}
+h1 {
+  font-family: satoshi;
+  font-weight: 900;
+  color: black;
+}
+
+h2 {
+  color: black;
+  font-weight: 900;
+  font-family: satoshi;
+  letter-spacing: 0.25px;
+  font-size: clamp(26px, 5vw, 42px);
+  line-height: 1;
+  padding-bottom: 3px;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(16px, 3vw, 24px);
+  font-family: satoshi;
+}
+
+h4 {
+  color: black;
+  font-weight: 900;
+  font-family: satoshi;
+  letter-spacing: 0.25px;
+  font-size: clamp(16px, 3vw, 22px);
+}
+
+h6 {
+  color: black;
+  font-weight: 400;
+  font-family: satoshimedium;
+  letter-spacing: 0.25px;
+  font-size: clamp(10px, 1vw, 14px);
+}/*# sourceMappingURL=Customers.css.map */
