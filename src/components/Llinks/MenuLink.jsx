@@ -1,4 +1,5 @@
-import React from "react";
+import PropTypes from 'prop-types'; // Import PropTypes
+
 import { Link } from "react-router-dom";
 
 export default function MenuLink({ slug, page }) {
@@ -9,3 +10,9 @@ export default function MenuLink({ slug, page }) {
     </li>
   );
 }
+
+// Add PropTypes validation
+MenuLink.propTypes = {
+  slug: PropTypes.string.isRequired,
+  page: PropTypes.string.isRequired,
+};

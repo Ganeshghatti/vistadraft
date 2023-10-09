@@ -13,15 +13,17 @@
   left: -40px;
   /* transform: skew(45deg); */
   transform: skewX(45deg);
-  background-color: white;
+  background-color: black;
   z-index: -1;
   transition: all 0.6s;
 }
-
+.contact-btn:hover{
+  color: white !important;
+}
 .contact-btn:hover::before {
   width: 160%;
 }
-/* CSS */
+
 .fullscreen-video {
   width: 100vw;
   height: 100vh;
